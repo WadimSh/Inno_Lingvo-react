@@ -1,12 +1,33 @@
 .page {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  text-align: center;
-  background-color: #fff;
   min-height: 100vh;
+
+  /*Переменные цвета для шрифтов*/
+  --main-color: #282828;
+  --secondary-color: #535353;
+  --header-color: #fff;
+  --tags-color: #213744;
+  --links-color: #6e8bf8;
+
+  /*переменные цвета для фона*/
+  --main-background: #fff;
+  --secondary-background: #e9ebf7;
+  --button-background: #ff00d6;
+  --register-button-background: #f8f8f8;
+  --lines-burger-color: #f2307f;
+  --point-slider-color: #d9d9d9;
+  --sticker-background: #c378f7;
+  --header-gradient: linear-gradient(91.25deg, #bf2ed1 .92%, #985ce4 51.04%, #6e8bf8 99.92%);
+  --banner-gradient: linear-gradient(93.01deg, #be30d2 6.8%, #7188f7 99.21%);
+
+  --size: calc(1vh + 1vw);
+
+  background-color: var(--main-background);
+  color: var(--main-color);
+
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #282828;
 }
