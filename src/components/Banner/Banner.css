@@ -1,0 +1,72 @@
+.banner {
+  width: calc(280px + (1170 - 280) * ((100vw - 320px) / (1440 - 320)));
+  max-width: 1170px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 50px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px -6px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.gradient {
+  background: var(--banner-gradient);
+}
+
+.img {
+  border: 1px solid red;
+}
+
+.banner__img {
+  width: calc(205px + (369 - 205) * ((100vw - 320px) / (1440 - 320)));
+  max-width: 369px;
+  height: calc(103px + (186 - 103) * ((100vw - 320px) / (1440 - 320)));
+  max-height: 186px;
+  background: url(../../images/oval.png) center/100% no-repeat;
+  position: absolute;
+  top: -12px;
+  right: 237px;
+}
+
+.banner__context {
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+    "title title title"
+    "batton subtitle subtitle";
+  margin-bottom: 68px;
+}
+
+.banner__title {
+  grid-area: title;
+  margin: 0 0 75px;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 122.5%;
+  color: var(--header-color);
+}
+
+.banner__subtitle {
+  grid-area: subtitle;
+  margin: 0;
+  max-width: 750px;
+  font-weight: 500;
+  line-height: 150.4%;
+  color: var(--header-color);
+}
+
+.banner__button {
+  grid-area: batton;
+  margin-right: 30px;
+  background-color: var(--button-background);
+  border-radius: 10px;
+  border: none;
+  width: 270px;
+  height: 66px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120.8%;
+  color: var(--header-color);
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, .25);
+}
