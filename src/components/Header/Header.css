@@ -1,6 +1,8 @@
 .header {
   flex: auto;
-  height: 300px;
+  display: flex;
+  align-items: center;
+  min-height: 800px;
   width: 100%;
   background: var(--header-gradient);
   margin-bottom: 150px;
@@ -17,6 +19,21 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.header__background {
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  width: 670px;
+  height: 615px;
+  margin-right: calc(1px + (640 - 1) * ((100vw - 1440px) / (2560 - 1440)));
+  object-fit: contain;
+}
+
+.header__context {
+  margin-left: calc(1px + (695 - 1) * ((100vw - 1168px) / (2560 - 1168)));
+  max-width: 715px;
 }
 
 .wave__wrapper {
