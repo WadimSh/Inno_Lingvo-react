@@ -31,15 +31,10 @@
 
 .banner__context {
   position: relative;
-  display: grid;
-  grid-template-areas: 
-    "title title title"
-    "batton subtitle subtitle";
   margin-bottom: 68px;
 }
 
 .banner__title {
-  grid-area: title;
   margin: 0 0 75px;
   font-weight: 900;
   font-size: 2.5rem;
@@ -47,8 +42,11 @@
   color: var(--header-color);
 }
 
+.banner__wrapper {
+  display: flex;
+}
+
 .banner__subtitle {
-  grid-area: subtitle;
   margin: 0;
   max-width: 750px;
   font-weight: 500;
@@ -57,7 +55,6 @@
 }
 
 .banner__button {
-  grid-area: batton;
   margin-right: 30px;
   background-color: var(--button-background);
   border-radius: 10px;

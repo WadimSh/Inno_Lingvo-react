@@ -9,8 +9,10 @@ function Banner({ onBanner, onTitle, onSubtitle }) {
       <div className="banner__img"></div>
       <div className="banner__context">
         <h3 className="banner__title">{onTitle}</h3>
-        <p className="banner__subtitle">{onSubtitle}</p>
-        <button className="banner__button">Записаться</button>
+        <div className="banner__wrapper">
+          <button className="banner__button">Записаться</button>
+          <p className="banner__subtitle">{onSubtitle}</p>
+        </div>
       </div>
     </section>
   )

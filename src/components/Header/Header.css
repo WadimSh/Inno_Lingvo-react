@@ -1,3 +1,97 @@
 .header {
   flex: auto;
+  height: 300px;
+  width: 100%;
+  background: var(--header-gradient);
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.header__line {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../images/line.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wave__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.wave__wrapper-inner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.wave__top {
+  background-size: 50% 100px;
+}
+
+.wave__animation .wave__top {
+  animation: move_wave 30s linear infinite;
+  animation-delay: 1s;
+  background-image: url('../../images/wave-top.png');
+}
+
+.wave__middle {
+  background-size: 50% 120px;
+}
+
+.wave__animation .wave__middle {
+  animation: move_wave 10s linear infinite;
+  background-image: url('../../images/wave-top.png');
+}
+
+.wave__bottom {
+  background-size: 50% 100px;
+}
+
+.wave__animation .wave__bottom {
+  animation: move_wave 15s linear infinite;
+  background-image: url('../../images/wave-top.png');
+}
+
+.bgTop {
+  z-index: 15;
+  opacity: .5;
+}
+
+.bgMiddle {
+  z-index: 10;
+  opacity: .75;
+}
+
+.bgBottom {
+  z-index: 5;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
 }
